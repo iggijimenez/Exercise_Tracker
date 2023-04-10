@@ -56,7 +56,10 @@ struct CardView: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
-            }    
+            }
+            .popover(isPresented: $showingPopover) {
+                PopupView()
+            }
         }
         .padding()
         .background(Color.gray)

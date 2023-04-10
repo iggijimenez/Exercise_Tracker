@@ -13,6 +13,7 @@ struct ContentView: View {
     
     @State private var name: String = ""
     
+    // Need to make this so it can be accessed in other files
     @State private var showingPopover = false
     
     @State private var showDetails = false
@@ -21,29 +22,6 @@ struct ContentView: View {
     
     var body: some View {
             CardView()
-                .popover(isPresented: $showingPopover) {
-                    HStack {
-                        VStack {
-                            Text("Input Weight")
-                            TextField("Enter your name", text: $name)
-                                .padding()
-                                .frame(width: 70, height: 70)
-                                .background(Color.gray)
-                        }
-                        .padding()
-                        .background(Color.blue)
-                        VStack {
-                            Text("Input Reps")
-                            TextField("Enter your name", text: $name)
-                                .padding()
-                                .frame(width: 70, height: 70)
-                                .background(Color.gray)
-                        }
-                        .padding()
-                        .background(Color.red)
-                    }
-                    .background(Color.green)
-        }
     }
 }
 

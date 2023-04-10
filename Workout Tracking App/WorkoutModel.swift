@@ -12,3 +12,8 @@ struct Exercises{
     var BenchPress: Int
     var InclinePress: Int
 }
+
+struct MainExercises {
+    var ExerciseOne: String
+    var ExerciseTwo: String
+}

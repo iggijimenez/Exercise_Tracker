@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40929B829E494FD006A79C7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40929B729E494FD006A79C7 /* CardView.swift */; };
 		A42AE63429E1D254006BFC5D /* Workout_Tracking_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE63329E1D254006BFC5D /* Workout_Tracking_AppApp.swift */; };
 		A42AE63629E1D254006BFC5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE63529E1D254006BFC5D /* ContentView.swift */; };
 		A42AE63829E1D257006BFC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42AE63729E1D257006BFC5D /* Assets.xcassets */; };
 		A42AE63B29E1D257006BFC5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42AE63A29E1D257006BFC5D /* Preview Assets.xcassets */; };
 		A42AE64229E1D469006BFC5D /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE64129E1D469006BFC5D /* WorkoutModel.swift */; };
+		A42AE64429E200D4006BFC5D /* ParentTestingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40929B729E494FD006A79C7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A42AE63029E1D254006BFC5D /* Workout Tracking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Tracking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42AE63329E1D254006BFC5D /* Workout_Tracking_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_Tracking_AppApp.swift; sourceTree = "<group>"; };
 		A42AE63529E1D254006BFC5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A42AE63729E1D257006BFC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42AE63A29E1D257006BFC5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A42AE64129E1D469006BFC5D /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTestingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				A42AE63329E1D254006BFC5D /* Workout_Tracking_AppApp.swift */,
 				A42AE63529E1D254006BFC5D /* ContentView.swift */,
+				A40929B729E494FD006A79C7 /* CardView.swift */,
 				A42AE64129E1D469006BFC5D /* WorkoutModel.swift */,
+				A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */,
 				A42AE63729E1D257006BFC5D /* Assets.xcassets */,
 				A42AE63929E1D257006BFC5D /* Preview Content */,
 			);
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42AE64429E200D4006BFC5D /* ParentTestingModel.swift in Sources */,
 				A42AE63629E1D254006BFC5D /* ContentView.swift in Sources */,
 				A42AE64229E1D469006BFC5D /* WorkoutModel.swift in Sources */,
 				A42AE63429E1D254006BFC5D /* Workout_Tracking_AppApp.swift in Sources */,
+				A40929B829E494FD006A79C7 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

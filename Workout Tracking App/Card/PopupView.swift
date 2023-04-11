@@ -11,35 +11,47 @@ struct PopupView: View {
     
     @State private var name: String = ""
     
+    var main = MainExercises(ExerciseOne: "Bench Press", ExerciseTwo: "Incline Bench Press")
+    
     var body: some View {
         VStack {
-            Text("Barbell Bench Press")
+            Text("\(main.ExerciseOne)")
                 .font(.largeTitle)
                 .fontWeight(.black)
             VStack {
                 Text("Input Weight")
-                TextField("Enter your name", text: $name)
+                    .font(.title)
+                    .fontWeight(.semibold)
+                TextField("Enter weight amount", text: $name) //This is going to later be saved as userDefault
                     .padding()
-                    .frame(width: 100, height: 100)
                     .background(Color.gray)
+                    .cornerRadius(10)
             }
             .padding()
             .frame(width: 200, height: 200)
-            .background(Color.blue)
+//            .background(Color.blue)
             VStack {
                 Text("Input Reps")
-                TextField("Enter your name", text: $name)
+                    .font(.title)
+                    .fontWeight(.semibold)
+                
+                TextField("Enter reps", text: $name) //This is going to later be saved as userDefault
                     .padding()
-                    .frame(width: 100, height: 100)
                     .background(Color.gray)
+                    .cornerRadius(10)
             }
             .padding()
-            .frame(width: 200, height: 200)
             .background(Color.red)
+            .frame(width: 200, height: 200)
+            Button {
+                print("hello")
+            } label: {
+                Text("SAVE")
+            }
+
         }
-        .frame(width: 500, height: 500)
         .padding(.top, -250)
-//        .background(Color.green)
+        .background(Color.gray)
     }
 }
 

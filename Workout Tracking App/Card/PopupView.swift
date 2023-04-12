@@ -29,7 +29,7 @@ struct PopupView: View {
             }
             .padding()
             .frame(width: 200, height: 200)
-//            .background(Color.blue)
+            .background(Color.blue)
             VStack {
                 Text("Input Reps")
                     .font(.title)
@@ -47,6 +47,10 @@ struct PopupView: View {
                 print("hello")
             } label: {
                 Text("SAVE")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
             }
 
         }

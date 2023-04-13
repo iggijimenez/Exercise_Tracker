@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var benchWeight = UserDefaults.standard.value(forKey: "stateSelected") ?? "0"
+    
     var exercises = Exercises(BenchPress: 100, InclinePress: 3)
     var main = MainExercises(ExerciseOne: "Bench Press", ExerciseTwo: "Incline Bench Press")
     

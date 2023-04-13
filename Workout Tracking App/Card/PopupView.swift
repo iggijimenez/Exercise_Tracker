@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PopupView: View {
     
+    let defaults = UserDefaults.standard
+    
     @State private var name: String = ""
     
     var main = MainExercises(ExerciseOne: "Bench Press", ExerciseTwo: "Incline Bench Press")
@@ -29,7 +31,7 @@ struct PopupView: View {
             }
             .padding()
             .frame(width: 200, height: 200)
-            .background(Color.blue)
+//            .background(Color.blue)
             VStack {
                 Text("Input Reps")
                     .font(.title)
@@ -41,10 +43,12 @@ struct PopupView: View {
                     .cornerRadius(10)
             }
             .padding()
-            .background(Color.red)
+//            .background(Color.red)
             .frame(width: 200, height: 200)
             Button {
                 print("hello")
+                defaults.set(name, forKey: "LastBench")
+                print("\(UserDefaults.standard.value(forKey: "LastBench")!)")
             } label: {
                 Text("SAVE")
                     .padding()
@@ -55,7 +59,7 @@ struct PopupView: View {
 
         }
         .padding(.top, -250)
-        .background(Color.gray)
+//        .background(Color.gray)
     }
 }
 

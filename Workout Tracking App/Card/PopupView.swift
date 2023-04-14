@@ -31,7 +31,6 @@ struct PopupView: View {
             }
             .padding()
             .frame(width: 200, height: 200)
-//            .background(Color.blue)
             VStack {
                 Text("Input Reps")
                     .font(.title)
@@ -43,11 +42,14 @@ struct PopupView: View {
                     .cornerRadius(10)
             }
             .padding()
-//            .background(Color.red)
             .frame(width: 200, height: 200)
             Button {
                 print("hello")
-                defaults.set(name, forKey: "LastBench")
+                if name == "" {
+                    print("nothing to save")
+                } else {
+                    defaults.set(name, forKey: "LastBench")
+                }
                 print("\(UserDefaults.standard.value(forKey: "LastBench")!)")
             } label: {
                 Text("SAVE")

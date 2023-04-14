@@ -19,6 +19,8 @@ struct CardView: View {
     
     @State var benchPress = ""
     
+    var benchVal = UserDefaults.standard.value(forKey: "LastBench") as! String
+    
     
     var body: some View {
         VStack {
@@ -33,6 +35,8 @@ struct CardView: View {
                 }
                 VStack {
                     Text("Weight")
+                    //Change this to UD of Weight
+                    Text("\(benchVal)")
                     Text("\(exercises.BenchPress)")
                 }
                 VStack {
@@ -50,7 +54,6 @@ struct CardView: View {
                     Image(systemName: "plus.circle.fill")
                     Text("Add")
                         .fontWeight(.medium)
-                    //                        .font(.title)
                 }
                 .padding()
                 .foregroundColor(.white)

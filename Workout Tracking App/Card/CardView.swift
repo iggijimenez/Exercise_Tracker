@@ -19,8 +19,8 @@ struct CardView: View {
     
     @State var benchPress = ""
     
-    var benchVal = UserDefaults.standard.value(forKey: "LastBench") as! String
-    
+//    var benchVal = UserDefaults.standard.value(forKey: "LastBench") as! String ?? "0"
+    var benchVal = 0
     
     var body: some View {
         VStack {
@@ -37,7 +37,6 @@ struct CardView: View {
                     Text("Weight")
                     //Change this to UD of Weight
                     Text("\(benchVal)")
-                    Text("\(exercises.BenchPress)")
                 }
                 VStack {
                     Text("Reps")

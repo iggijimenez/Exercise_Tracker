@@ -25,24 +25,14 @@ struct CardView: View {
         
         if unwrapped == nil {
             print("it is nil")
-            unwrapped = (unwrapped as! NSString) as String
-            print(unwrapped)
-            return (unwrapped as! NSString) as String
+            return "0"
         } else {
             print("not nil")
-//            unwrapped = 0
-            print(type(of: (unwrapped as! NSString) as String))
-            print((unwrapped as! NSString) as String)
+//            print(type(of: (unwrapped as! NSString) as String))
             return (unwrapped as! NSString) as String
-//            return unwrapped as! Int
-            
         }
     }
     
-//    var benchVal = UserDefaults.standard.value(forKey: "LastBench") as! String ?? "
-    
-    
-    var benchVal = 0
     
     var body: some View {
         VStack {
@@ -57,10 +47,7 @@ struct CardView: View {
                 }
                 VStack {
                     Text("Weight")
-                    //Change this to UD of Weight
-                    Text("\(benchVal)")
                     Text("\(unwrap())")
-//                    unwrap()
                 }
                 VStack {
                     Text("Reps")

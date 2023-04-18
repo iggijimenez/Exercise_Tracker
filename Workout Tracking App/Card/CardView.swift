@@ -19,7 +19,29 @@ struct CardView: View {
     
     @State var benchPress = ""
     
-//    var benchVal = UserDefaults.standard.value(forKey: "LastBench") as! String ?? "0"
+    func unwrap() -> String {
+        
+        @State var unwrapped = UserDefaults.standard.value(forKey: "LastBench")
+        
+        if unwrapped == nil {
+            print("it is nil")
+            unwrapped = (unwrapped as! NSString) as String
+            print(unwrapped)
+            return (unwrapped as! NSString) as String
+        } else {
+            print("not nil")
+//            unwrapped = 0
+            print(type(of: (unwrapped as! NSString) as String))
+            print((unwrapped as! NSString) as String)
+            return (unwrapped as! NSString) as String
+//            return unwrapped as! Int
+            
+        }
+    }
+    
+//    var benchVal = UserDefaults.standard.value(forKey: "LastBench") as! String ?? "
+    
+    
     var benchVal = 0
     
     var body: some View {
@@ -37,6 +59,8 @@ struct CardView: View {
                     Text("Weight")
                     //Change this to UD of Weight
                     Text("\(benchVal)")
+                    Text("\(unwrap())")
+//                    unwrap()
                 }
                 VStack {
                     Text("Reps")
@@ -69,6 +93,8 @@ struct CardView: View {
         .cornerRadius(15)
     }
 }
+
+
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {

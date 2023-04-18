@@ -15,6 +15,7 @@
 		A42AE63B29E1D257006BFC5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42AE63A29E1D257006BFC5D /* Preview Assets.xcassets */; };
 		A42AE64229E1D469006BFC5D /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE64129E1D469006BFC5D /* WorkoutModel.swift */; };
 		A42AE64429E200D4006BFC5D /* ParentTestingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */; };
+		A487694D29EE045B00C66124 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A487694C29EE045B00C66124 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A42AE63A29E1D257006BFC5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A42AE64129E1D469006BFC5D /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
 		A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTestingModel.swift; sourceTree = "<group>"; };
+		A487694C29EE045B00C66124 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A42AE63529E1D254006BFC5D /* ContentView.swift */,
 				A40929BB29E49810006A79C7 /* Card */,
 				A42AE64129E1D469006BFC5D /* WorkoutModel.swift */,
+				A487694C29EE045B00C66124 /* CardViewController.swift */,
 				A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */,
 				A42AE63729E1D257006BFC5D /* Assets.xcassets */,
 				A42AE63929E1D257006BFC5D /* Preview Content */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A42AE64429E200D4006BFC5D /* ParentTestingModel.swift in Sources */,
+				A487694D29EE045B00C66124 /* CardViewController.swift in Sources */,
 				A42AE63629E1D254006BFC5D /* ContentView.swift in Sources */,
 				A42AE64229E1D469006BFC5D /* WorkoutModel.swift in Sources */,
 				A40929BA29E497C1006A79C7 /* PopupView.swift in Sources */,

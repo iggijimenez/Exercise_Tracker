@@ -11,7 +11,8 @@ struct PopupView: View {
     
     let defaults = UserDefaults.standard
     
-    @State private var name: String = ""
+    @State private var weight: String = ""
+    @State private var reps: String = ""
     
     var main = MainExercises(ExerciseOne: "Bench Press", ExerciseTwo: "Incline Bench Press")
     
@@ -24,7 +25,7 @@ struct PopupView: View {
                 Text("Input Weight")
                     .font(.title)
                     .fontWeight(.semibold)
-                TextField("Enter weight amount", text: $name) //This is going to later be saved as userDefault
+                TextField("Enter weight amount", text: $weight)
                     .padding()
                     .background(Color.gray)
                     .cornerRadius(10)
@@ -36,8 +37,7 @@ struct PopupView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 
-                TextField("Enter reps", text: $name) //This is going to later be saved as userDefault
-                    .padding()
+                TextField("Enter reps", text: $reps)                    .padding()
                     .background(Color.gray)
                     .cornerRadius(10)
             }
@@ -45,10 +45,10 @@ struct PopupView: View {
             .frame(width: 200, height: 200)
             Button {
                 print("hello")
-                if name == "" {
+                if weight == "" {
                     print("nothing to save")
                 } else {
-                    defaults.set(name, forKey: "LastBench")
+                    defaults.set(weight, forKey: "LastBench")
                 }
                 print("\(UserDefaults.standard.value(forKey: "LastBench")!)")
             } label: {

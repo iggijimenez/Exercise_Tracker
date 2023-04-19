@@ -28,7 +28,7 @@ struct CardView: View {
             return "0"
         } else {
             print("not nil")
-//            print(type(of: (unwrapped as! NSString) as String))
+            //            print(type(of: (unwrapped as! NSString) as String))
             return (unwrapped as! NSString) as String
         }
     }
@@ -56,7 +56,6 @@ struct CardView: View {
             }
             
             Button(action: {
-                print("Delete tapped!")
                 showDetails.toggle()
                 showingPopover = true
             }) {

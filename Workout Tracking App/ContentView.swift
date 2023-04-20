@@ -24,7 +24,7 @@ struct ContentView: View {
     @State var benchPress = ""
     
     var body: some View {
-            CardView()
+        CardView( userName: $name)
     }
 }
 

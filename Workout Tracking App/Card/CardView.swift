@@ -12,12 +12,11 @@ struct CardView: View {
     var main = MainExercises(ExerciseOne: "Bench Press", ExerciseTwo: "Incline Bench Press")
     
     @State private var name: String = ""
-    
     @State private var showingPopover = false
-    
     @State private var showDetails = false
-    
     @State var benchPress = ""
+    
+    @Binding var userName: String
     
     func unwrap() -> String {
         
@@ -47,7 +46,9 @@ struct CardView: View {
                 }
                 VStack {
                     Text("Weight")
-                    Text("\(unwrap())")
+                    Text("userName: \(userName)")
+//                    print(userName)
+//                    Text("\(unwrap())")
                 }
                 VStack {
                     Text("Reps")
@@ -58,6 +59,7 @@ struct CardView: View {
             Button(action: {
                 showDetails.toggle()
                 showingPopover = true
+                print(userName)
             }) {
                 HStack {
                     Image(systemName: "plus.circle.fill")
@@ -82,8 +84,10 @@ struct CardView: View {
 
 
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView()
-    }
-}
+//struct CardView_Previews: PreviewProvider {
+//    @State var myString = "Hello World"
+//
+//    static var previews: some View {
+//        CardView(userName: "myString")
+//    }
+//}

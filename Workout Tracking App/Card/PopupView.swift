@@ -9,8 +9,9 @@ import SwiftUI
 
 struct PopupView: View {
     
-    let defaults = UserDefaults.standard
+//    let defaults = UserDefaults.standard
     
+    @AppStorage("userName") var userName: String = ""
     @State private var weight: String = ""
     @State private var reps: String = ""
     
@@ -37,7 +38,8 @@ struct PopupView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 
-                TextField("Enter reps", text: $reps)                    .padding()
+                TextField("Enter reps", text: $reps)
+                    .padding()
                     .background(Color.gray)
                     .cornerRadius(10)
             }
@@ -48,7 +50,9 @@ struct PopupView: View {
                 if weight == "" {
                     print("nothing to save")
                 } else {
-                    defaults.set(weight, forKey: "LastBench")
+                    userName = weight
+                    print(userName)
+//                    defaults.set(weight, forKey: "LastBench")
                 }
                 print("\(UserDefaults.standard.value(forKey: "LastBench")!)")
             } label: {

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PopupView: View {
     
-//    let defaults = UserDefaults.standard
+    let defaults = UserDefaults.standard
     
-    @AppStorage("userName") var userName: String = ""
+//    @AppStorage("userName") var userName: String = ""
     @State private var weight: String = ""
     @State private var reps: String = ""
     
@@ -50,11 +50,9 @@ struct PopupView: View {
                 if weight == "" {
                     print("nothing to save")
                 } else {
-                    userName = weight
-                    print(userName)
-//                    defaults.set(weight, forKey: "LastBench")
+                    defaults.set(weight, forKey: "LastBench")
                 }
-                print("\(UserDefaults.standard.value(forKey: "LastBench")!)")
+                print("\(defaults.value(forKey: "LastBench")!)")
             } label: {
                 Text("SAVE")
                     .padding()

@@ -16,6 +16,7 @@
 		A42AE64229E1D469006BFC5D /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE64129E1D469006BFC5D /* WorkoutModel.swift */; };
 		A42AE64429E200D4006BFC5D /* ParentTestingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */; };
 		A487694D29EE045B00C66124 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A487694C29EE045B00C66124 /* CardViewController.swift */; };
+		A4AA3BE929F3356A00465157 /* Exercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4AA3BE729F3356A00465157 /* Exercise.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A42AE64129E1D469006BFC5D /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
 		A42AE64329E200D4006BFC5D /* ParentTestingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTestingModel.swift; sourceTree = "<group>"; };
 		A487694C29EE045B00C66124 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		A4AA3BE829F3356A00465157 /* Exercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Exercise.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				A42AE63329E1D254006BFC5D /* Workout_Tracking_AppApp.swift */,
 				A42AE63529E1D254006BFC5D /* ContentView.swift */,
+				A4AA3BE729F3356A00465157 /* Exercise.xcdatamodeld */,
 				A40929BB29E49810006A79C7 /* Card */,
 				A42AE64129E1D469006BFC5D /* WorkoutModel.swift */,
 				A487694C29EE045B00C66124 /* CardViewController.swift */,
@@ -165,6 +168,7 @@
 				A42AE63629E1D254006BFC5D /* ContentView.swift in Sources */,
 				A42AE64229E1D469006BFC5D /* WorkoutModel.swift in Sources */,
 				A40929BA29E497C1006A79C7 /* PopupView.swift in Sources */,
+				A4AA3BE929F3356A00465157 /* Exercise.xcdatamodeld in Sources */,
 				A42AE63429E1D254006BFC5D /* Workout_Tracking_AppApp.swift in Sources */,
 				A40929B829E494FD006A79C7 /* CardView.swift in Sources */,
 			);
@@ -367,6 +371,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4AA3BE729F3356A00465157 /* Exercise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4AA3BE829F3356A00465157 /* Exercise.xcdatamodel */,
+			);
+			currentVersion = A4AA3BE829F3356A00465157 /* Exercise.xcdatamodel */;
+			path = Exercise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A42AE62829E1D254006BFC5D /* Project object */;
 }

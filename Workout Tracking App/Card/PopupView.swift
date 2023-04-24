@@ -11,9 +11,12 @@ struct PopupView: View {
     
     let defaults = UserDefaults.standard
     
-//    @AppStorage("userName") var userName: String = ""
+    //    @AppStorage("userName") var userName: String = ""
     @State private var weight: String = ""
     @State private var reps: String = ""
+    @State private var number: Int = 100
+    @State private var colorScheme = 1
+
     
     var main = MainExercises(ExerciseOne: "Bench Press", ExerciseTwo: "Incline Bench Press")
     
@@ -26,10 +29,15 @@ struct PopupView: View {
                 Text("Input Weight")
                     .font(.title)
                     .fontWeight(.semibold)
-                TextField("Enter weight amount", text: $weight)
-                    .padding()
-                    .background(Color.gray)
-                    .cornerRadius(10)
+                Picker("Your age", selection: $number) {
+                    ForEach(1...999, id: \.self) { number in
+                        Text("\(number) lbs")
+                    }
+                }
+//                TextField("Enter weight amount", text: $weight)
+//                    .padding()
+//                    .background(Color.gray)
+//                    .cornerRadius(10)
             }
             .padding()
             .frame(width: 200, height: 200)
@@ -60,10 +68,10 @@ struct PopupView: View {
                     .foregroundColor(.white)
                     .cornerRadius(15)
             }
-
+            
         }
         .padding(.top, -250)
-//        .background(Color.gray)
+        //        .background(Color.gray)
     }
 }
 
